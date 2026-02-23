@@ -6,7 +6,11 @@
 pip install numpy pandas yfinance joblib scikit-learn tensorflow seaborn matplotlib
 ```
 
-## 2) Set output paths in training notebook
+## 2) Dataset
+
+**NASDAQ (^IXIC) historical data** is downloaded automatically via `yfinance.download()` in both notebooks. No manual download needed.
+
+## 3) Set output paths in training notebook
 
 Open `Training.ipynb` and update:
 
@@ -18,11 +22,11 @@ Example values:
 - `ModelPath = "model_nasdaq_hybrid.keras"`
 - `jobLibPath = "scaler_nasdaq_hybrid.joblib"`
 
-## 3) Train the model
+## 4) Train the model
 
 Run all cells in `Training.ipynb` from top to bottom.
 
-## 4) Test the model
+## 5) Test the model
 
 In `Testing.ipynb`, ensure these filenames match your saved outputs:
 
